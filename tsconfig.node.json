@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2023"],
+    "types": ["node"],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "composite": true,
+    "baseUrl": ".",
+    "paths": { "@shared/*": ["src/shared/*"] }
+  },
+  "include": [
+    "electron.vite.config.ts",
+    "vitest.config.ts",
+    "vitest.perf.config.ts",
+    "src/main/**/*",
+    "src/preload/**/*",
+    "src/backend/**/*",
+    "src/shared/**/*",
+    "src/renderer/src/format.ts",
+    "src/renderer/src/shortcuts.ts",
+    "src/renderer/src/autofetch.ts",
+    "src/renderer/src/tabs.ts",
+    "src/renderer/src/layout.ts",
+    "src/renderer/src/storage-migrate.ts",
+    "src/renderer/src/palette.ts",
+    "src/renderer/src/graph/palettes.ts",
+    "src/renderer/src/graph/contrast.ts",
+    "src/renderer/src/graph/refs-display.ts",
+    "src/renderer/src/graph/column-widths.ts",
+    "tests/**/*"
+  ]
+}

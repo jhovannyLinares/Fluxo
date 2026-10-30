@@ -1,0 +1,21 @@
+appId: com.gio.fluxo
+productName: Fluxo
+directories:
+  buildResources: build
+  output: dist
+files:
+  - out/**
+  - package.json
+win:
+  target:
+    - target: nsis
+      arch: [x64]
+nsis:
+  # instalación por usuario, sin permisos de administrador
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Fluxo
+  uninstallDisplayName: Fluxo

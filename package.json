@@ -1,0 +1,40 @@
+{
+  "name": "fluxo",
+  "productName": "Fluxo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Visor de ramas git para Windows: muestra en vivo lo que pasa en repos privados, incluidos cambios hechos por agentes de IA.",
+  "author": "Gio",
+  "main": "./out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "lint": "eslint src tests",
+    "test": "vitest run",
+    "bench": "vitest run --config vitest.perf.config.ts",
+    "dist": "electron-vite build && electron-builder --win"
+  },
+  "dependencies": {
+    "@fontsource/open-sans": "5.2.5",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.0",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "5.2.0",
+    "electron": "43.7.7",
+    "electron-builder": "26.17.0",
+    "electron-vite": "5.0.0",
+    "eslint": "^10.13.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "typescript": "5.9.3",
+    "typescript-eslint": "^8.72.1",
+    "vite": "7.3.7",
+    "vitest": "4.0.18"
+  }
+}
